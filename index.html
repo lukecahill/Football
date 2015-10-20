@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Football Season Cost Calculator
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h3>
+            Calculate your season ticket cost:
+        </h3>
+        <form class="well" onsubmit="return false;">
+
+            <label for="amountOfDrink">
+                Choose your team:
+            </label>
+            <select class="form-control" name="teams" id="team">
+                <option value="Cardiff">
+                    Cardiff
+                </option>
+                <option value="Liverpool">
+                    Liverpool
+                </option>
+                <option value="Manchester">
+                    Manchester
+                </option>
+                <option value="Swansea">
+                    Swansea
+                </option>
+            </select><br />
+
+            <label for="numberOfGames">
+                # of Games:
+            </label>
+            <input class="form-control" id="numberOfGames" type="number" min="0" /><br />
+
+            <label for="amountOfFood">
+                Amount of food per game:
+            </label>
+            <input class="form-control" id="amountOfFood" type="number" min="0" /><br />
+
+            <label for="amountOfDrink">
+                Amount of drinks per game:
+            </label>
+            <input class="form-control" id="amountOfDrink" type="number" min="0" /><br />
+
+            <p class="text-right">
+                <button class="btn btn-default" id="submitButton">
+                    Calculate
+                </button>
+            </p>
+        </form>
+
+        <br />
+        <div id="results">
+            <h3 id="resultsHeader">
+                Results
+            </h3>
+            <p id="supportedTeam">
+            </p>
+            <p id="ticket">
+                Average price per ticket: <span id="ticketCost"></span>
+            </p>
+            <p id="drink">
+                Average price per drink: <span id="drinkCost"></span>
+            </p>
+            <p id="food">
+                Average price of food: <span id="foodCost"></span>
+            </p>
+            <p id="average">
+                Average cost per game: <span id="averageCost"></span>
+            </p>
+            <p id="total">
+                The amount it would cost you to follow your team this season: <span id="totalCost"></span>
+            </p>
+        </div>
+
+        <footer class="text-right">
+            <button class="btn btn-default" id="aboutButton">
+                About
+            </button><span>
+                &copy; Luke Cahill
+            </span>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="PriceCalculator.js"></script>
+</body>
+</html>
