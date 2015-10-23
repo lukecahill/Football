@@ -2,7 +2,7 @@
 // http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/
 "use strict";
 
-// The teams are simply JavaScript objects rather than using a database for this. This is simply just so I could show the use objects.
+// The teams are simply JavaScript objects rather than using a database for this. This is simply just so I could show the use of objects in JS.
 
 // Want to hide the paragraphs with the summary before we start
 $('#ticket, #food, #drink, #total, #average, #resultsHeader').hide();
